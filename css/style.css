@@ -245,7 +245,7 @@ ul {
 /* header */
 
 .container-background {
-    background: url(../images/bashir-mobile.jpg) no-repeat right fixed;
+    background: url(../images/bashir-mobile.jpg) no-repeat right top fixed;
     background-size: cover;
     height: 100%;
 
