@@ -44,11 +44,12 @@ html {
 
 body {
     background-color: #F9FAFA;
-    color: #373D3F;
+    color: #444;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1.1em;
     letter-spacing: 0px;
+    hyphens: none;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -135,8 +136,8 @@ h4 {
 p {
     font-weight: 100;
     font-size: 1.2rem;
-    line-height: 1.8;
-    letter-spacing: 1px;
+    line-height: 200%;
+    letter-spacing: 0px;
     margin: 0 0 23px 0;
 }
 
@@ -615,15 +616,17 @@ footer ul {
 }
 
 .resume-dates {
+    padding-left: 35px;
+    display: block;
+    text-align: right;
+
 
     padding-top: 50px;
-
 }
 
 .resume-dates h5 {
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -638,8 +641,8 @@ footer ul {
 }
 
 .resume .col {
-    margin-top: -10px;
-    margin-bottom: -10px;
+    /*margin-top: -10px;
+margin-bottom: -10px;*/
 }
 
 .resume h5 {
@@ -858,9 +861,6 @@ label {
     }
 
 
-
-
-
     .contact-left {
         width: 40%;
         display: inline-block
@@ -874,6 +874,15 @@ label {
 
     .contact-right iframe {
         width: 100%;
+    }
+
+
+    /*about me / resume*/
+    .resume-details h5 {
+        margin-left: -220px;
+        margin-top: -1.3em;
+        width: 100px;
+        text-align: right;
     }
 
 
