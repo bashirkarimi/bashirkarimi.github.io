@@ -806,6 +806,7 @@ label {
 
     .logo-home {
         width: 60%;
+        padding-top: 0;
 
     }
     .logo-home h1 {
