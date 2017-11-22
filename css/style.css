@@ -76,53 +76,55 @@ h1 {
 h2 {
     font-size: 1.4em;
     text-transform: uppercase;
-    text-align: center;
+    /*    text-align: center;*/
     letter-spacing: 1px;
     width: 100%;
     margin-bottom: 32px;
 
 
+
+
 }
 
+/*
 h2:before {
     content: "";
     width: 20%;
     display: inline-block;
     height: 2px;
     background: -moz-linear-gradient(left, rgba(249, 250, 250, 0) 0%, rgba(174, 180, 173, 0.82) 71%, rgba(174, 180, 173, 1) 87%);
-    /* FF3.6-15 */
+   
     background: -webkit-linear-gradient(left, rgba(249, 250, 250, 0) 0%, rgba(174, 180, 173, 0.82) 71%, rgba(174, 180, 173, 1) 87%);
-    /* Chrome10-25,Safari5.1-6 */
+   
     background: linear-gradient(to right, rgba(249, 250, 250, 0) 0%, rgba(174, 180, 173, 0.82) 71%, rgba(174, 180, 173, 1) 87%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /*    background: #2e4869;*/
+   
     border-right: 2px solid #FE8626;
     border-width: 8px;
     margin: 0 10px 8px 0;
 
 
 }
+*/
 
 h2:after {
     content: "";
     width: 20%;
     display: inline-block;
-    height: 2px;
-    /*    background: #2e4869;*/
+    height: 3px;
+
     background: #f9fafa;
-    /* Old browsers */
+
     background: -moz-linear-gradient(left, rgba(174, 180, 173, 1) 13%, rgba(174, 180, 173, 0.82) 29%, rgba(249, 250, 250, 0) 100%);
-    /* FF3.6-15 */
+
     background: -webkit-linear-gradient(left, rgba(174, 180, 173, 1) 13%, rgba(174, 180, 173, 0.82) 29%, rgba(249, 250, 250, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
+
     background: linear-gradient(to right, rgba(174, 180, 173, 1) 13%, rgba(174, 180, 173, 0.82) 29%, rgba(249, 250, 250, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
     border-left: 2px solid #FE8626;
-    border-width: 8px;
+    border-width: 10px;
     margin: 0 0 8px 10px;
 
 }
-
 
 h3 {
     font-weight: 300;
@@ -609,7 +611,8 @@ footer ul {
     font-size: 1.5em;
     margin: 0;
     padding: 0;
-    margin-bottom: -15px
+    margin: 20px 0 -15px 0;
+
 }
 
 .resume h3 i {
@@ -620,8 +623,6 @@ footer ul {
     padding-left: 35px;
     display: block;
     text-align: right;
-
-
     padding-top: 50px;
 }
 
@@ -667,24 +668,15 @@ margin-bottom: -10px;*/
     color: #424542;
 }
 
-/*.resume h4::before {
-    color: #424542;
-    font-size: 17px;
-    content: "\f192";
-    font-family: FontAwesome;
-    margin-left: -48px;
-    padding-right: 32px;
-    display: inline-block;
-    font-weight: 100;
-    text-decoration: none;
-        
-}*/
+
 
 .resume ul {
     padding-left: 0;
     margin: 0 0 20px 25px;
-    ;
+}
 
+.resume li {
+    line-height: 1.5em;
 }
 
 .resume p {
@@ -800,7 +792,45 @@ label {
 
     h2 {
         font-size: 1.5em;
+        text-align: center;
 
+    }
+    h2:before {
+        content: "";
+        width: 20%;
+        display: inline-block;
+        height: 2px;
+        background: -moz-linear-gradient(left, rgba(249, 250, 250, 0) 0%, rgba(174, 180, 173, 0.82) 71%, rgba(174, 180, 173, 1) 87%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(249, 250, 250, 0) 0%, rgba(174, 180, 173, 0.82) 71%, rgba(174, 180, 173, 1) 87%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(249, 250, 250, 0) 0%, rgba(174, 180, 173, 0.82) 71%, rgba(174, 180, 173, 1) 87%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        /*    background: #2e4869;*/
+        border-right: 2px solid #FE8626;
+        border-width: 8px;
+        margin: 0 10px 8px 0;
+
+
+    }
+
+    h2:after {
+        content: "";
+        width: 20%;
+        display: inline-block;
+        height: 2px;
+        /*    background: #2e4869;*/
+        background: #f9fafa;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(174, 180, 173, 1) 13%, rgba(174, 180, 173, 0.82) 29%, rgba(249, 250, 250, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(174, 180, 173, 1) 13%, rgba(174, 180, 173, 0.82) 29%, rgba(249, 250, 250, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(174, 180, 173, 1) 13%, rgba(174, 180, 173, 0.82) 29%, rgba(249, 250, 250, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        border-left: 2px solid #FE8626;
+        border-width: 8px;
+        margin: 0 0 8px 10px;
 
     }
 
@@ -883,8 +913,8 @@ label {
     .resume-details h5 {
         margin-left: -220px;
         margin-top: -1.3em;
-        width: 100px;
-        text-align: right;
+        width: 150px;
+        text-align: left;
     }
 
 
