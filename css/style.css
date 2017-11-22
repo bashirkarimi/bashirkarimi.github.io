@@ -224,7 +224,7 @@ a {
 }
 
 a:hover {
-    color: #f28c73;
+    color: #FE8626;
 }
 
 ul {
@@ -257,16 +257,29 @@ ul {
 
 
 
-.btn-bars {
-    padding: 15px;
-    font-size: 1.6em;
+.toggle a {
+    padding: 7px;
+    color: #fff;
+    background-color: #FE8626;
+    height: 40px;
+    right: 20px;
+    width: 43px;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    top: 20px;
     z-index: 500;
+    border-radius: 3px;
+    text-align: center;
 
 
 }
+
+.toggle i {
+    font-size: 26px;
+}
+
+
+
+
 
 
 
@@ -288,7 +301,7 @@ ul {
     transition: 1s;
 }
 
-.main-nav.expanded {
+.main-nav.active {
     display: block;
 }
 
@@ -403,7 +416,7 @@ ul {
 /*Social Icon*/
 
 .social-icon {
-    text-align: center;
+
     font-size: 1.2em;
     margin-top: 0px;
 }
@@ -419,6 +432,7 @@ ul {
 }
 
 .social-icon i {
+    text-align: center;
     width: 50px;
     height: 50px;
     margin-bottom: 24px;
@@ -689,7 +703,7 @@ margin-bottom: -10px;*/
 
 .skill li,
 skill fa {
-    margin: 12px 0 0 -12px;
+    margin: 10px 0 0 -12px;
 
 }
 
@@ -700,7 +714,7 @@ skill fa {
     height: 4px;
     background-color: #aeb4ad;
     border-left: 2px solid #FE8626;
-    border-width: 30px;
+    border-width: 20px;
     margin: 0 10px 8px 0;
 
 }
@@ -777,7 +791,7 @@ label {
 }
 
 .contact .map {
-    padding-top: 1.4em;
+    padding-top: 1.5em;
 }
 
 
@@ -873,7 +887,7 @@ label {
     .main-nav ul i {
         display: none;
     }
-    .main-nav.expanded ul i {
+    .main-nav.active ul i {
         display: inline-block;
         font-size: 1em;
     }
@@ -907,7 +921,16 @@ label {
     .contact-right iframe {
         width: 100%;
     }
-
+    /*About me */
+    .about-me img {
+        border-right: 2px solid #aeb4ad;
+        padding-right: 6px;
+        /*    border-radius: 50%;*/
+        width: 50%;
+        /*    height: auto;*/
+        display: block;
+        margin: 0 auto;
+    }
 
     /*about me / resume*/
     .resume-details h5 {
