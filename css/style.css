@@ -793,7 +793,7 @@ label {
 
 
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
     .container-background {
         background: #F5F4F4;
         background: url(../images/bashir-front.jpg) no-repeat right fixed;
@@ -806,6 +806,7 @@ label {
         text-align: center;
 
     }
+
     h2:before {
         content: "";
         width: 20%;
