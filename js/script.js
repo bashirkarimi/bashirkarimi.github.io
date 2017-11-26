@@ -1,5 +1,5 @@
  var mobBtn = document.querySelector(".toggle");
- var mobMenu = document.querySelector("#main-menu");
+ var mobMenu = document.querySelector("#main-menu, .toggle");
  var onClick = function (event) {
      event.preventDefault();
      if (mobMenu.classList.contains('active')) {

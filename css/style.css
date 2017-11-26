@@ -250,28 +250,51 @@ a:hover {
 
 }
 
+.toggle {
+    height: 2.2em;
+    width: 2.8em;
 
-
-
-
-.toggle a {
-    padding: 7px;
-    color: #FE8626;
-    /*    background-color: #FE8626;*/
-    height: 40px;
-    right: 20px;
-    width: 43px;
     position: absolute;
-    top: 20px;
+    top: 2em;
+    right: 110%;
     z-index: 500;
-    border-radius: 3px;
-    text-align: center;
+    background-color: #1E3764;
+    border-radius: 4px;
+    cursor: pointer;
 
 
 }
 
-.toggle i {
-    font-size: 26px;
+.toggle-icon,
+.toggle-icon:before,
+.toggle-icon:after {
+    background: #fff;
+    content: '';
+    height: .1em;
+    right: 0;
+    top: 2em;
+    position: absolute;
+    width: 2em;
+    border-radius: 2px;
+}
+
+.toggle-icon:before {
+    top: 10px;
+
+}
+
+.toggle-icon:after {
+    top: -10px;
+}
+
+.toggle-icon {
+    margin-top: -1em;
+    margin-right: .4em;
+    width: 1.8em
+}
+
+.toggle:hover .toggle-icon {
+    width: 2em;
 }
 
 
@@ -284,22 +307,57 @@ a:hover {
 /* main  nav of page*/
 
 .main-nav {
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0;
     z-index: 100;
     text-align: right;
     padding: 80px 0 0 0;
-    width: 100%;
+    width: 80%;
     height: 100vh;
     background: rgba(46, 72, 105, 0.9);
     /*    border-bottom: 2px solid red;*/
-    display: none;
+    transform: translatex(100%);
     transition: 1s;
 }
 
 .main-nav.active {
-    display: block;
+    transform: translatex(0);
+}
+
+.main-nav.active .toggle {
+    transform: rotate(90deg);
+    height: 2.8em;
+    width: 2.2em;
+
+}
+
+.main-nav.active .toggle-icon {
+    transform: rotate(90deg);
+    left: .1em;
+    top: 2.4em;
+}
+
+.main-nav.active .toggle-icon:before {
+    transform: translateX(-1.3em) rotate(45deg);
+    width: 0.7em;
+    top: 4px;
+
+}
+
+.main-nav.active .toggle-icon:after {
+    transform: translateX(-1.3em) rotate(-45deg);
+    width: .7em;
+    top: -4px;
+
+}
+
+.main-nav.active .toggle-icon:before,
+.main-nav.active .toggle-icon:after,
+.main-nav.active .toggle-icon,
+.main-nav.active,
+.main-nav.active .toggle {
+    transition: .4s all;
 }
 
 .main-nav ul {
@@ -318,10 +376,11 @@ a:hover {
 .main-nav li {
     padding: 6px;
     display: inline-block;
-    width: 90%;
+    width: 95%;
     vertical-align: bottom;
     text-align: right;
     border-bottom: 1px solid #FE8626;
+
 
 
 }
@@ -329,8 +388,9 @@ a:hover {
 
 .main-nav li:hover {
     color: #ff962c;
-    border-bottom: 1px solid #fff;
-    transition: 1s;
+    border-color: #fff;
+    border-width: 10%;
+    transition: .5s all;
 }
 
 .main-nav ul i {
@@ -412,40 +472,41 @@ a:hover {
 
 /*Social Icon*/
 
-.social-icon {
-
+.social-icons {
     font-size: 1.2em;
-    margin-top: 0px;
+
 }
 
-.social-icon ul {
+.social-icons ul {
     display: inline-block;
     list-style: none;
+    padding: 0;
+
 
 }
 
-.social-icon li {
+.social-icons li {
     display: inline-block;
+    margin: 0 12px;
+
 }
 
-.social-icon i {
+.social-icons i {
     text-align: center;
     width: 50px;
     height: 50px;
     margin-bottom: 24px;
-
-    border: 1px solid #aeb4ad;
     border-radius: 50%;
     line-height: 50px;
-    color: #1E3764;
+    background-color: #1E3764;
+    color: #fff;
+    border: 1px solid #1E3764;
 }
 
-.social-icon a i:hover {
-    background: #1E3764;
-    color: #fff;
+.social-icons a i:hover {
+    background: #fff;
+    color: #1E3764;
     transition: 0.5s;
-    border-color: #fff;
-
 
 }
 
@@ -622,7 +683,7 @@ footer ul {
     font-size: 1.5em;
     margin: 0;
     padding: 0;
-    margin: 20px 0 -15px 0;
+    margin: 20px 0 -15px -10px;
 
 }
 
@@ -668,7 +729,7 @@ margin-bottom: -10px;*/
 .resume h4 {
     font-size: 1.2em;
     font-weight: 400;
-    padding-top: 12px;
+    padding: 12px 0 5px 0;
 
 }
 
@@ -731,7 +792,7 @@ button {
 
 /* Contact page */
 
-.social-icon p {
+.social-icons p {
     padding-bottom: 1.6em;
 }
 
@@ -853,9 +914,7 @@ label {
 
     }
 
-    .toggle i {
-        font-size: 26px;
-    }
+
 
 
     .logo-home {
@@ -887,11 +946,10 @@ label {
     }
 
     .main-nav {
-        position: absolute;
+        position: fixed;
         width: 280px;
         height: 100%;
-        display: none;
-        transition: 1s;
+        transition: .3s all;
     }
 
     .main-nav ul i {
@@ -949,6 +1007,8 @@ label {
         width: 150px;
         text-align: left;
     }
+
+
 
 
 }
